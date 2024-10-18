@@ -10,3 +10,4 @@ def fetchandDownload(url, path):
 url = 'https://en.wikipedia.org/wiki/Marco_Polo'
 
 fetchandDownload(url,'MarcoPolo/wikipedia.html')
+
