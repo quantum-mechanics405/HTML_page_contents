@@ -14,7 +14,7 @@ a = soup.title.string                               #fetching the title as strin
 # print(soup.find("h1"))                              #<h1 class="header">This is my sample code</h1>
 # print(soup.find("h2",class_ = 'header2').contents)  #['Muhammad Umar']
 # print(soup.button.text)                             #search
-#find all give all such things which match its argument as LIST (important)
+#find_all give all such things which match its argument as LIST (important)
 # print(soup.find_all('h1'))                          #[<h1 class="header">This is my sample code</h1>, <h1 class="header3">Good code</h1>]
 
 # printing all links
@@ -34,4 +34,4 @@ def has_class_but_no_id(tag):
     return tag.has_attr('class') and not tag.has_attr('id')
 
 results = soup.find_all(has_class_but_no_id)
-print(results.len)
+print(results)
