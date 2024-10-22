@@ -24,6 +24,7 @@ message_text = "Hello from Selenium!"  # Replace with the message you want to se
 search_box = WebDriverWait(driver, 20).until(
     EC.presence_of_element_located((By.XPATH, '//*[@title="Search or start new chat"]'))
 )
+
 search_box.click()
 search_box.send_keys(contact_name)
 
@@ -37,6 +38,7 @@ contact.click()
 message_box = WebDriverWait(driver, 20).until(
     EC.presence_of_element_located((By.XPATH, '//div[@title="Type a message"]'))
 )
+
 message_box.click()
 message_box.send_keys(message_text)
 message_box.send_keys(Keys.ENTER)
