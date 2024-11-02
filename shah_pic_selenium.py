@@ -44,4 +44,5 @@ for i, img in enumerate(images[:10]):  # Limiting to first 10 images for example
         print(f"Error downloading image {i+1}: {e}")
 
 # Close the WebDriver
+
 driver.quit()
