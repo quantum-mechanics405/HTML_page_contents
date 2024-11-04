@@ -45,4 +45,5 @@ for i, img in enumerate(images[:10]):  # Limiting to first 10 images for example
 
 # Close the WebDriver
 
+
 driver.quit()
